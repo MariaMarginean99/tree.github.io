@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Personal page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Marginean Maria">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <!-- PRE LOADER -->
+  <div class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </div>
+  <!-- MENU -->
+  <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- NAVBAR HEADER -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <!-- lOGO -->
+        <a href="index.html" class="navbar-brand">Home</a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html" class="smoothScroll">About</a></li>
+          <li><a href="introduction.html" class="smoothScroll">Introduction</a></li>
+          <li><a href="traversals.html" class="smoothScroll">Tree Traversals</a></li>
+          <li><a href="binary.html" class="smoothScroll">Binary Tree</a></li>
+          <li><a href="avl.html" class="smoothScroll">AVL Tree</a></li>
+          <li><a href="red_black.html" class="smoothScroll">Red–Black Tree</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="home-text">
+            <h1>Traversări de Arbori</h1>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN-->
+  <div class="introduction">
+    <h2>Traversări de arbori</h2>
+    <p class="description">
+      &emsp;Vom înţelege prin traversare o metodă de examinare sistematică a nodurilor unui arbore astfel încât
+      fiecare nod să fie vizitat o singură dată şi să nu rămînă niciun nod nevizitat. In urma unei traversări se
+      defineşte şi o relaţie de ordine peste mulţimea nodurilor arborelui, relaţie de care pot beneficia alţi
+      algoritmi de prelucrare.<br>
+      &emsp;Se remarcă patru strategii de traversare a unui arbore.</p>
+    <h3>&emsp;Preordine:</h3>
+    <p class="description">
+      1. se vizitează Rădăcina v.
+      2. se vizitează în preordine subarborii cu rădăcinile v1,v2,...,vk în această ordine.</p>
+    <h3>&emsp;Inordine:</h3>
+    <p class="description">
+      1. vizitează în inordine subarborele stîng
+      2. vizitează Rădăcina v
+      3. vizitează în inordine subarborele drept.
+    </p>
+    <h3>&emsp;Postordine:</h3>
+    <p class="description">
+      1. vizitează în postordine v1, v2, ...vk în această ordine.
+      2. vizitează Rădăcina r.
+    </p>
+    <h3>&emsp;În lăţime sau pe nivele:</h3>
+    <p class="description">
+      1. se vizitează Rădăcina apoi celelalte noduri pe nivele, în cadrul fiecărui nivel nodurile sunt vizitate
+      de la stînga la dreapta
+    </p>
+    <h2>Traversări de arbori binari</h2>
+    <p class="description">
+      &emsp;In cazul arborilor binari se utilizează o serie de prescurtări ale principalelor metode de traversare
+      astfel:<br>
+      &emsp;&emsp;- pentru preordine - RSD (Rădăcina, Stînga, Dreapta), adică se vizitează Rădăcina, apoi
+      subarborele stîng, după care cel drept; la vizitarea fiecărui subarbore se aplică din nou aceeaşi regulă
+      de vizitare, începînd cu Rădăcina sa.<br>
+      &emsp;&emsp;- pentru inordine - SRD (Stînga, Rădăcina, Dreapta);<br>
+      &emsp;&emsp;- pentru postordine - SDR (Stînga, Dreapta, Rădăcina).
+    </p>
+    <h2>Exemplu de traversare într-un arbore binar</h2>
+    <p class="description">
+      &emsp;Dacă vom parcurge un arbore care reprezintă o expresie aritmetică vom găsi că o parte din listele
+      obţinute au o semnificaţie cunoscută:
+    </p>
+    <img class="image" src="./images/traversari.png" alt="Can't find the picture">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p id="subsol">&copy; Mărginean Maria</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

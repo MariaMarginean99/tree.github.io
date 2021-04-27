@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Personal page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Marginean Maria">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <!-- PRE LOADER -->
+  <div class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </div>
+  <!-- MENU -->
+  <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- NAVBAR HEADER -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <!-- lOGO -->
+        <a href="index.html" class="navbar-brand">Home</a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html" class="smoothScroll">About</a></li>
+          <li><a href="introduction.html" class="smoothScroll">Introduction</a></li>
+          <li><a href="traversals.html" class="smoothScroll">Tree Traversals</a></li>
+          <li><a href="binary.html" class="smoothScroll">Binary Tree</a></li>
+          <li><a href="avl.html" class="smoothScroll">AVL Tree</a></li>
+          <li><a href="red_black.html" class="smoothScroll">Red–Black Tree</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="home-text">
+            <h1>Arbore AVL</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN-->
+  <div class="introduction">
+    <h2>Noțiuni introductive</h2>
+    <p class="description">
+      &emsp;• Sunt arbori binari de căutare care se autoechlibrează;<br>
+      &emsp;• În fiecare nod este memorată valoarea unui Factor de echilibrare = h(subarb_dr) – h(subarb_stg);<br>
+      &emsp;• Într-un arbore AVL înălțimile celor 2 subarbori diferă cu maxim 1.<br>
+      &emsp;• Proprietate: Într-un arbore AVL toate valorile FE() sunt -1, 0 sau 1.
+    </p>
+    <h2>Exemplu de arbore AVL</h2>
+    <img class="image" src="./images/avl.png" alt="Can't find the picture">
+    <h2>Echilibrarea unui arbore AVL cu ajutorul operațiilor de rotire</h2>
+    <h3>&emsp;1. Right Left Case</h3>
+    <img class="image" src="./images/rlc.png" alt="Can't find the picture">
+    <h3>&emsp;2. Left Right Case</h3>
+    <img class="image" src="./images/lrc.png" alt="Can't find the picture">
+    <h3>&emsp;3. Right Right Case</h3>
+    <img class="image" src="./images/rrc.png" alt="Can't find the picture">
+    <h3>&emsp;4. Left Left Case</h3>
+    <img class="image" src="./images/llc.png" alt="Can't find the picture">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p id="subsol">&copy; Mărginean Maria</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

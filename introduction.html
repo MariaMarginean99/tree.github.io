@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Personal page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Marginean Maria">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <!-- PRE LOADER -->
+  <div class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </div>
+  <!-- MENU -->
+  <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- NAVBAR HEADER -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <!-- lOGO -->
+        <a href="index.html" class="navbar-brand">Home</a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html" class="smoothScroll">About</a></li>
+          <li><a href=introduction.html class="smoothScroll">Introduction</a></li>
+          <li><a href="traversals.html" class="smoothScroll">Tree Traversals</a></li>
+          <li><a href="binary.html" class="smoothScroll">Binary Tree</a></li>
+          <li><a href="avl.html" class="smoothScroll">AVL Tree</a></li>
+          <li><a href="red_black.html" class="smoothScroll">Red–Black Tree</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="home-text">
+            <h1>Introducere</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN-->
+  <div class="introduction">
+    <h2>Definiții</h2>
+    <p class="description">
+      &emsp; Arborele este un graf neorientat conex fără cicluri în care unul din noduri
+      este desemnat ca rădăcină. Nodurile pot fi aşezate pe niveluri începând cu rădăcina
+      care este plasată pe nivelul 1. <br> &emsp; Nodul fără nici un predecesor este numit rădăcină,
+      nodul care nu are nici un succesor (niciun fiu) este numit frunză.Succesorii unui nod vor fi numiţi în continuare şi descendenţi.<br>
+      &emsp; Gradul unui nod este numărul de fii pe care îi are acel nod. Nodurile care au gradul zero se
+      numesc noduri frunză sau noduri terminale.<br>
+      &emsp; Gradul unui arbore este valoarea maximă a gradelor nodurilor sale, sau, cu alte cuvinte,
+      gradul unui arbore este egal cu numărul maxim de fii pe care îi are un nod.<br>
+      &emsp;Prorietate: Dacă între 2 noduri ale arborelui există un drum atunci acel drum este unic.<br>
+      &emsp;Inălţimea arborelui este lungimea maximă a drumurilor din arbore.<br>
+      &emsp;Nivelul unui nod este egal cu nivelul tatălui sau la care se adaugă 1. Nivelul rădăcinii este egal cu 0.<br>
+      &emsp;Două noduri avînd acelaşi nivel şi acelaşi tată se mai numesc şi fraţi.<br>
+      &emsp;Observaţie : Inălţimea unui arbore este egală cu nivelul maxim al frunzelor sale.<br>
+      &emsp;Arborele echilibrat este acel arbore în care diferenţa dintre lungimile drumurilor de la nodul rădăcină
+      la oricare nod frunză este cel mult 1.<br>
+      &emsp;Un arbore ordonat este un arbore în care fii fiecărui vîrf sunt ordonaţi.
+    </p>
+    <h2>Exemplu de arbore</h2>
+    <img class="image" src="./images/tree.jpg" alt="Can't find the picture">
+    <h2>Prelucrări elementare în arbori</h2>
+    <p class="description">
+      - construirea unui arbore;<br>
+      - traversarea arborilor;<br>
+      - căutarea unui anumit nod într-un arbore;<br>
+      - modificarea unui arbore prin inserare şi ştergere de noduri;<br>
+      - eliberarea spaţiului ocupat de un arbore.
+    </p>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p id="subsol">&copy; Mărginean Maria</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

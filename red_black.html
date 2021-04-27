@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Personal page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Marginean Maria">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <!-- PRE LOADER -->
+  <div class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </div>
+  <!-- MENU -->
+  <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- NAVBAR HEADER -->
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <!-- lOGO -->
+        <a href="index.html" class="navbar-brand">Home</a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <nav class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="about.html" class="smoothScroll">About</a></li>
+          <li><a href="introduction.html" class="smoothScroll">Introduction</a></li>
+          <li><a href="traversals.html" class="smoothScroll">Tree Traversals</a></li>
+          <li><a href="binary.html" class="smoothScroll">Binary Tree</a></li>
+          <li><a href="avl.html" class="smoothScroll">AVL Tree</a></li>
+          <li><a href="red_black.html" class="smoothScroll">Red–Black Tree</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="home-text">
+            <h1>Arbore Roșu-Negru</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN-->
+  <div class="introduction">
+    <h2>Definiție</h2>
+    <p class="description">
+      &emsp; Arborii roșu-negru sunt arbori binari de căutare în care fiecare nod are un flag care
+      indică dacă este Roșu sau Negru.
+    </p>
+    <h3>&emsp;&emsp;Reguli</h3>
+    <p class="description">
+      &emsp;&emsp; • Rădăcina este un nod Negru; <br>
+      &emsp;&emsp; • Un nod Roșu nu poate avea un fiu Roșu; <br>
+      &emsp;&emsp; • Toate căile de la rădăcină până la orice null au același număr de noduri Negre (regula “Equal exitcost”).
+    </p>
+    <h2>Exemplu de arbore roșu-negru</h2>
+    <img class="image" src="./images/rosu_negru.png" alt="Can't find the picture">
+    <h2>Corectare Roșu-Roșu</h2>
+    <p class="description">
+      &emsp; Sunt 4 situații posibile în care putem avea atât nodul cât și fiul roșu:
+    </p>
+    <img class="image" src="./images/corectare.png" alt="Can't find the picture">
+    <p class="description">
+      &emsp; În toate situațiile se rearanjează cele trei noduri (n1 &lt; n2 &lt; n3) astfel :
+    </p>
+    <img class="image" src="./images/corect.png" alt="Can't find the picture">
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p id="subsol">&copy; Mărginean Maria</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
